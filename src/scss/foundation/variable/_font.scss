@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* ========================================
+  Font Variables
+======================================== */
+// Font Family Variables
+// Note: Native font stack
+// https://getbootstrap.com/docs/4.3/content/reboot/
+// ex: font-family: $fontFamilyPrimay;
+// --------------------------------------------------
+$font-family-primary: // Safari for OS X and iOS (San Francisco)
+  -apple-system, /* Chrome < 56 for OS X (San Francisco)*/ blinkmacsystemfont,
+  /* Windows*/ "Segoe UI", /* Android*/ "Roboto", /* Basic web fallback*/ "Helvetica Neue", arial,
+  sans-serif, /* Emoji fonts*/ "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;

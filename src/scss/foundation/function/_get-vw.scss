@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use "../variable/font-size";
+@use "../function/strip-unit" as su;
+@use "sass:math";
+
+/* ========================================
+  Get Vw Function
+  @param {Number} $px - Number to convert px to vw
+  @param {Number} $viewport - Viewport size
+  @return {Number} $vw - Number with vw unit
+  ex: getVw(30px); -> 8vw
+======================================== */
+
+@function get-vw($px, $viewport: 375px) {
+  @if unit($px) != "px" or unit($viewport) != "px" {
+    @error 'Argument should be px unit!';
+  }
+
+  $vw: math.div(su.strip-unit($px), su.strip-unit($viewport));
+
+  @return $vw;
+}

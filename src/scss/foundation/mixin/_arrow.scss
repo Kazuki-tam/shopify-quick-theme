@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@use "sass:math";
+
+/* ========================================
+  Arrow Mixin
+  @param {String} $direction - Direction
+  @param {Number} $width - Width
+  @param {Number} $height - Height
+  @param {Number} $border - Border
+  @param {Color} $color - Color
+  ex: @include arrow.arrow(upward, 20px, 20px, 2px, #333);
+======================================== */
+
+@mixin arrow($direction, $width, $height, $border, $color: currentColor) {
+  @if not
+    index(upward rightward downward leftward upperLeft upperRight lowerRight lowerLeft, $direction)
+  {
+    @error "Index the direction of triangle () from 'upward,'rightward','downward','leftward','upperLeft','upperRight','lowerRight','lowerLeft'";
+  }
+
+  width: $width;
+  height: $height;
+  border: $border solid;
+
+  @if $direction == upward {
+    border-color: $color $color transparent transparent;
+    transform: rotate(-45deg);
+  } @else if $direction == rightward {
+    border-color: $color $color transparent transparent;
+    transform: rotate(45deg);
+  } @else if $direction == downward {
+    border-color: transparent transparent $color $color;
+    transform: rotate(-45deg);
+  } @else if $direction == leftward {
+    border-color: transparent transparent $color $color;
+    transform: rotate(45deg);
+  } @else if $direction == upperLeft {
+    border-color: transparent transparent $color $color;
+    transform: rotate(67.5deg);
+  } @else if $direction == upperRight {
+    border-color: $color $color transparent transparent;
+    transform: rotate(22.5deg);
+  } @else if $direction == lowerRight {
+    border-color: $color $color transparent transparent;
+    transform: rotate(67.5deg);
+  } @else if $direction == lowerLeft {
+    border-color: transparent transparent $color $color;
+    transform: rotate(22.5deg);
+  }
+}

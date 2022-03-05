@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* ========================================
+  Color Variables
+======================================== */
+// Canvas Color Variables
+// --------------------------------------------------
+$color-canvas-primary: #fff !default;
+$color-canvas-inverted: #333 !default;
+
+// Brand Color Variables
+// --------------------------------------------------
+$color-brand-primary: #ffa800 !default;
+$color-brand-secondary: #ffc635 !default;
+$color-brand-tertiary: #ff6b00 !default;
+
+// Text Color Variables
+// --------------------------------------------------
+$color-text-primary: #333 !default;
+$color-text-secondary: #ccc !default;
+$color-text-tertiary: #ff6b00 !default;
+$color-text-inverted: #fff !default;
+$color-text-link: #ff6b00 !default;
+$color-text-success: #00b533 !default;
+$color-text-warn: #ffb700 !default;
+$color-text-danger: #ff2600 !default;
+
+// UI Color Variables
+// --------------------------------------------------
+$color-ui-primary: #ff6b00 !default;
+$color-ui-secondary: #ffc635 !default;
+$color-ui-tertiary: #ffc635 !default;
+$color-ui-success: #00b533 !default;
+$color-ui-warn: #ffb700 !default;
+$color-ui-danger: #ff2600 !default;

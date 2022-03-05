@@ -1,0 +1,43 @@
+{
+  "name": "theme-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all -p theme:serve webpack:watch",
+    "deploy": "npm-run-all webpack:prd push",
+    "deploy:dev": "npm-run-all webpack:dev push:dev",
+    "clean": "rimraf ./shopify",
+    "clean:unused": "rimraf ./shopify/.gitignore",
+    "postInstall": "typesync",
+    "webpack:watch": "NODE_ENV=development webpack --watch",
+    "webpack:dev": "NODE_ENV=development webpack",
+    "webpack:prd": "NODE_ENV=production webpack",
+    "newTheme": "npm-run-all theme:init clean:unused",
+    "pull": "cd shopify && shopify theme pull -n",
+    "pull:dev": "cd shopify && shopify theme pull -d",
+    "push": "cd shopify && shopify theme push -n",
+    "push:dev": "cd shopify && shopify theme push -d",
+    "push:upload": "cd shopify && shopify theme push -u",
+    "theme:init": "shopify theme init shopify",
+    "theme:serve": "cd shopify && shopify theme serve",
+    "theme:check": "cd shopify && shopify theme check -a"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "css-loader": "^6.7.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^6.2.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.7",
+    "typescript": "^4.6.2",
+    "typesync": "^0.8.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "yarn-audit-fix": "^9.1.2"
+  }
+}

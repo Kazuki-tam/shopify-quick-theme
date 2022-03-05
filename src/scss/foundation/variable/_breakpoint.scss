@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* ========================================
+  Breakpoint Variables
+  Note: These breakpoints are refered from Bootstrap.
+  https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  ex: $breakpoints
+======================================== */
+$breakpoint: (
+  "xs": (
+    min-width: 0,
+  ),
+  "sm": (
+    min-width: 576px,
+  ),
+  "md": (
+    min-width: 768px,
+  ),
+  "lg": (
+    min-width: 992px,
+  ),
+  "xl": (
+    min-width: 1200px,
+  ),
+  "xxl": (
+    min-width: 1400px,
+  ),
+) !default;

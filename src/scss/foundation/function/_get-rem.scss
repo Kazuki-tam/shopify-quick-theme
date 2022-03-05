@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "../variable/font-size";
+@use "../function/strip-unit" as su;
+
+/* ========================================
+  Get Rem Function
+  @param {Number} $font-size - Number to convert px to rem
+  @param {Number} $root-font-size - Number to divite target value by root's font size
+  @return {Number} $rem - Number with rem unit
+  ex: get-rem(16px); -> 1rem
+======================================== */
+
+@function get-rem($font-size, $root-font-size: font-size.$font-size-primary) {
+  @if unit($font-size) != "px" or unit($root-font-size) != "px" {
+    @error "Argument should be px unit!";
+  }
+
+  $rem: math.div(su.strip-unit($font-size), su.strip-unit($root-font-size)) * 1rem;
+
+  @return $rem;
+}

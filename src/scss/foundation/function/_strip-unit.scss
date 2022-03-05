@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@use "sass:math";
+
+/* ========================================
+  Strip-unit Function
+  @param {Number} $number - Number to remove unit
+  @return {Number} - Unitless number
+  note: You can use this function in other functions and mixins.
+  ex: strip-unit(100px); -> 100
+======================================== */
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}

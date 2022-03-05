@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@use "sass:math";
+
+/* ========================================
+  Triangle Mixin
+  @param {String} $direction - Direction
+  @param {Number} $width - Width
+  @param {Number} $height - Height
+  @param {Color} $color - Color
+  ex: @include triangle.triangle(upward, 20px, 20px, #333);
+======================================== */
+
+@mixin triangle($direction, $width, $height, $color: currentColor) {
+  @if not
+    index(upward rightward downward leftward upperLeft upperRight lowerRight lowerLeft, $direction)
+  {
+    @error "Index the direction of triangle () from 'upward,'rightward','downward','leftward','upperLeft','upperRight','lowerRight','lowerLeft'";
+  }
+
+  $half-width: math.div($width, 2);
+  $half-height: math.div($height, 2);
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  @if $direction == upward {
+    border-width: 0 $half-width $height $half-width;
+    border-color: transparent transparent $color transparent;
+  } @else if $direction == rightward {
+    border-width: $half-height 0 $half-height $width;
+    border-color: transparent transparent transparent $color;
+  } @else if $direction == downward {
+    border-width: $height $half-width 0 $half-width;
+    border-color: $color transparent transparent transparent;
+  } @else if $direction == leftward {
+    border-width: $half-height $width $half-height 0;
+    border-color: transparent $color transparent transparent;
+  } @else if $direction == upperLeft {
+    border-width: $height $height 0 0;
+    border-color: $color transparent transparent transparent;
+  } @else if $direction == upperRight {
+    border-width: 0 $height $height 0;
+    border-color: transparent $color transparent transparent;
+  } @else if $direction == lowerRight {
+    border-width: 0 0 $height $height;
+    border-color: transparent transparent $color transparent;
+  } @else if $direction == lowerLeft {
+    border-width: $height 0 0 $height;
+    border-color: transparent transparent transparent $color;
+  }
+}

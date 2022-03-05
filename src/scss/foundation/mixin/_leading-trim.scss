@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* ========================================
+  Leading Trim Mixin
+  @param {Number} $line-height - Line Height
+  Note: You can use get-line-height function.
+  ex: @include leading-trim.leading-trim(1.6);
+======================================== */
+
+@mixin leading-trim($line-height: 1.6) {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    margin-top: calc((1 - #{$line-height}) * .5em);
+  }
+
+  &::after {
+    margin-bottom: calc((1 - #{$line-height}) * .5em);
+  }
+}
