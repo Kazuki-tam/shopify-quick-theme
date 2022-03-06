@@ -1,7 +1,8 @@
 {
   "name": "theme-starter",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Starter kit for Shopify theme developers.",
+  "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "license": "MIT",
   "scripts": {
     "start": "npm-run-all -p theme:serve webpack:watch",
