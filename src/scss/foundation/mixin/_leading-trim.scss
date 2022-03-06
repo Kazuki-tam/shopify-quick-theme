@@ -17,10 +17,12 @@
   }
 
   &::before {
+    /* prettier-ignore */
     margin-top: calc((1 - #{$line-height}) * .5em);
   }
 
   &::after {
+    /* prettier-ignore */
     margin-bottom: calc((1 - #{$line-height}) * .5em);
   }
 }

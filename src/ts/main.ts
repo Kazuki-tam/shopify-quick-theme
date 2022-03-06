@@ -1,2 +1,5 @@
+// Import SCSS
 import '../scss/style.scss';
-console.log("test")
+
+// Import Common Libraries
+import './lib/smoothScroll';

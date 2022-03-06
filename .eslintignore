@@ -1,0 +1,7 @@
+shopify/
+**/coverage/
+**/node_modules/
+**/*.min.js
+*.config.js
+*.config.ts
+.eslintrc.js

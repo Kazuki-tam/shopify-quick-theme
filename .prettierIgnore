@@ -1,0 +1,6 @@
+shopify/
+**/coverage/
+**/node_modules/
+**/*.min.js
+.husky
+.github
