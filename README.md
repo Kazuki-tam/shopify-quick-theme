@@ -70,14 +70,14 @@ yarn pull:new
 ## Available Commands
 Recommend you to check out these commands before you get started.
 
-### start command
+### Start command
 Start your project in development mode.
 
 ```shell
 yarn start
 ```
 
-### build command
+### Build command
 Build your project for production.
 
 ```shell
@@ -90,7 +90,7 @@ Build your project for development.
 yarn build:dev
 ```
 
-### cheat command
+### Cheat command
 Open Shopify Cheat Sheet.
 
 ```shell
@@ -99,7 +99,7 @@ yarn cheat
 
 [Shopify Cheat Sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
 
-### lint command
+### Lint command
 Lint project's code.
 
 ```shell
@@ -112,7 +112,7 @@ Lint and fix project's code.
 yarn lint:fix
 ```
 
-### test command
+### Test command
 Test project's code.
 
 ```shell
@@ -123,7 +123,7 @@ yarn test
 yarn test:watch
 ```
 
-### postInstall command
+### PostInstall command
 Install missing TypeScript typings.
 
 ```shell
