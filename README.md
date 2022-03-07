@@ -1,32 +1,35 @@
 # shopify-quick-theme
-shopify-quick-theme is a starter kit for shopify theme developers. You can customize a Shopify theme and also build a new theme from scratch with this starter kit.
 
-Caution: This project is still in development.
+shopify-quick-theme is a starter kit for Shopify theme developers. This starter kit supports you to customize a Shopify theme and build a new one from scratch.
 
 ## Status
+
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme)
 
+Caution: This project is still in development.
+
 ## Features
-- Abstracting shopify CLI command
+
+- Abstracting Shopify CLI command
 - Bundle files with webpack
 - Transpile SCSS to CSS with dart-sass
-- Out of the box useful JavaScript libraries
-- Out of the box useful SCSS functions and Mixins
 - Lint TS files with ESLint
 - Lint SCSS files with Stylelint
 - Format code with prettier
 - Built-in test runner with Jest
 
 ## Requirements
+
 - [Node v16+](https://nodejs.org/en/)
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
 ## Main dependencies
+
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
 - [Yarn](https://yarnpkg.com/)
 - [Webpack](https://webpack.js.org/)
@@ -38,6 +41,7 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 - [Jest](https://jestjs.io/)
 
 ## How to use
+
 Clone this repository and install dependencies.
 
 ```shell
@@ -45,14 +49,16 @@ yarn install
 ```
 
 ### Authenticate
+
 Connect Shopify CLI with the store that you want to work on.
 
- ```shell
- shopify login --store xxxxxxxxx.myshopify.com
- ```
+```shell
+shopify login --store xxxxxxxxx.myshopify.com
+```
 
 ### Create a new theme
- Use `newTheme` command to create a new theme from scratch. This command create a copy of Dawn.
+
+Use `newTheme` command to create a new theme from scratch. This command creates a copy of Dawn.
 
 ```shell
 yarn newTheme
@@ -61,16 +67,31 @@ yarn newTheme
 https://shopify.dev/themes/tools/cli/theme-commands#init
 
 ### Customize an existing theme
+
 Use `pull:new` command to customize an existing theme.
 
 ```shell
 yarn pull:new
 ```
 
+### Add CSS and JavaScript into your theme files
+
+Add these tags in `<head></head>` section.
+
+```liquid
+{{ 'style.css' | asset_url | stylesheet_tag }}
+```
+
+```liquid
+<script src="{{ 'main.js' | asset_url }}" defer></script>
+```
+
 ## Available Commands
+
 Recommend you to check out these commands before you get started.
 
 ### Start command
+
 Start your project in development mode.
 
 ```shell
@@ -78,6 +99,7 @@ yarn start
 ```
 
 ### Build command
+
 Build your project for production.
 
 ```shell
@@ -90,7 +112,50 @@ Build your project for development.
 yarn build:dev
 ```
 
+### Pull command
+
+Retrieve theme files from Shopify without deleting local files.
+
+```shell
+yarn pull
+```
+
+### Push command
+
+Upload your local theme files to Shopify without deleting remote files.
+
+```shell
+yarn push
+```
+
+Push to your development theme. If you don't have a development theme, then one is created.
+
+```shell
+yarn push:dev
+```
+
+Upload the theme to the theme library as a new unpublished theme.
+
+```shell
+yarn push:upload
+```
+
+### Deploy command
+
+Build your local files and upload them to Shopify as production.
+
+```shell
+yarn deploy
+```
+
+Build your local files and upload them to Shopify as development.
+
+```shell
+yarn deploy:dev
+```
+
 ### Cheat command
+
 Open Shopify Cheat Sheet.
 
 ```shell
@@ -100,20 +165,22 @@ yarn cheat
 [Shopify Cheat Sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
 
 ### Lint command
-Lint project's code.
+
+Lint this project code.
 
 ```shell
 yarn lint
 ```
 
-Lint and fix project's code.
+Fix this project code.
 
 ```shell
 yarn lint:fix
 ```
 
 ### Test command
-Test project's code.
+
+Test this project code.
 
 ```shell
 yarn test
@@ -124,6 +191,7 @@ yarn test:watch
 ```
 
 ### PostInstall command
+
 Install missing TypeScript typings.
 
 ```shell
@@ -131,10 +199,13 @@ yarn postInstall
 ```
 
 ## Recommended IDE
+
 [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Contributes
+
 Pull requests are always welcome.
 
 ## License
+
 MIT
