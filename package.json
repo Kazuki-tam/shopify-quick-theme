@@ -23,6 +23,8 @@
     "checkTypes": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
+    "e2e": "playwright test",
+    "e2e:headed": "playwright test --headed",
     "postInstall": "typesync",
     "webpack:watch": "NODE_ENV=development webpack --watch",
     "webpack:dev": "NODE_ENV=development webpack",
@@ -39,6 +41,7 @@
     "theme:check": "cd shopify && shopify theme check -a"
   },
   "devDependencies": {
+    "@playwright/test": "^1.19.2",
     "@types/eslint": "^8.4.1",
     "@types/jest": "^27.4.1",
     "@types/micromodal": "^0.3.3",
@@ -52,6 +55,7 @@
     "css-loader": "^6.7.0",
     "eslint": "^8.10.0",
     "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-playwright": "^0.8.0",
     "jest": "^27.5.1",
     "mini-css-extract-plugin": "^2.6.0",
     "npm-run-all": "^4.1.5",
