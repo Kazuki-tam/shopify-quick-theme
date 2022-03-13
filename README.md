@@ -9,8 +9,6 @@ shopify-quick-theme is a starter kit for Shopify theme developers. This starter 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme)
 
-Caution: This project is still in development.
-
 ## Features
 
 - Abstracting Shopify CLI command
@@ -19,12 +17,12 @@ Caution: This project is still in development.
 - Lint TS files with ESLint
 - Lint SCSS files with Stylelint
 - Format code with prettier
-- Built-in test runner with Jest
+- Built-in test runner with Jest and Playwright
 
 ## Requirements
 
 - [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v2.13.0](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -39,6 +37,7 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 - [Stylelint](https://stylelint.io/)
 - [Prettier](https://prettier.io/)
 - [Jest](https://jestjs.io/)
+- [Playwright](https://playwright.dev/)
 
 ## How to use
 
@@ -154,6 +153,13 @@ Build your local files and upload them to Shopify as development.
 yarn deploy:dev
 ```
 
+### Open command
+Returns links that let you preview the specified theme.
+
+```shell
+yarn open
+```
+
 ### Cheat command
 
 Open Shopify Cheat Sheet.
@@ -180,14 +186,38 @@ yarn lint:fix
 
 ### Test command
 
-Test this project code.
+Run End-to-end testing and unit testing.
 
 ```shell
 yarn test
 ```
 
+Run unit testing.
+
 ```shell
-yarn test:watch
+yarn unit
+```
+
+```shell
+yarn unit:watch
+```
+
+Run End-to-end testing in a headless.
+
+```shell
+yarn e2e
+```
+
+Run End-to-end testing with headed browser.
+
+```shell
+yarn e2e:headed
+```
+
+Generate End-to-end test code.
+
+```shell
+yarn e2e:codegen
 ```
 
 ### PostInstall command
@@ -196,6 +226,16 @@ Install missing TypeScript typings.
 
 ```shell
 yarn postInstall
+```
+
+## End-to-end test
+End-to-end test runner is build in this project.
+Please create an env file and run this command if you want to do an End-to-end test.
+
+Install supported browsers.
+
+```shell
+yarn e2e:install
 ```
 
 ## Recommended IDE

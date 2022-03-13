@@ -1,7 +1,17 @@
+import 'dotenv/config'
 import { test, expect } from '@playwright/test';
 
-test('basic test', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-  const title = page.locator('.navbar__inner .navbar__title');
-  await expect(title).toHaveText('Playwright');
+// You need to create an env file.
+const SHOP_URL = process.env.SHOP_URL;
+const SHOP_PASS = process.env.SHOP_PASS
+
+test('Access test', async ({ page }) => {
+  await page.goto(SHOP_URL);
+  // Click input[name="password"]
+  await page.locator('input[name="password"]').click();
+  // Fill input[name="password"]
+  await page.locator('input[name="password"]').fill(SHOP_PASS);
+  // Press enter
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(SHOP_URL);
 });

@@ -18,7 +18,7 @@ const config: PlaywrightTestConfig = {
   workers: process.env.CI ? 2 : undefined,
 
   use: {
-    // Configure browser and context here
+    channel: 'chrome',
   },
 };
 export default config;
