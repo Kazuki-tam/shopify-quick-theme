@@ -153,11 +153,11 @@ Build your local files and upload them to Shopify as development.
 yarn deploy:dev
 ```
 
-### Open command
+### Preview command
 Returns links that let you preview the specified theme.
 
 ```shell
-yarn open
+yarn preview
 ```
 
 ### Cheat command
@@ -229,7 +229,6 @@ yarn postInstall
 ```
 
 ## End-to-end test
-End-to-end test runner is build in this project.
 Please create an env file and run this command if you want to do an End-to-end test.
 
 Install supported browsers.
