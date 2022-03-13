@@ -1,13 +1,13 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyFilePlugin = require("copy-webpack-plugin");
-const WriteFilePlugin = require("write-file-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyFilePlugin = require('copy-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 const publicPath = `${__dirname}/shopify/`;
 const assetsPath = `${__dirname}/shopify/assets`;
 
 // Set production or development via NODE_ENV
 const MODE = process.env.NODE_ENV;
 // Source map setting
-const enabledSourceMap = MODE === "development";
+const enabledSourceMap = MODE === 'development';
 
 module.exports = {
   mode: MODE,
@@ -33,7 +33,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               url: false,
               sourceMap: enabledSourceMap,
@@ -44,18 +44,18 @@ module.exports = {
             },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               sourceMap: enabledSourceMap,
               postcssOptions: {
                 plugins: [
-                  ["autoprefixer", { grid: true }],
+                  ['autoprefixer', { grid: true }],
                 ],
               },
             },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sourceMap: enabledSourceMap,
             },
@@ -69,19 +69,19 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.css",
+      filename: 'style.css',
     }),
     new CopyFilePlugin(
      {
       patterns: [
         {
-          context: "src",
-          from: "**/*",
+          context: 'src',
+          from: '**/*',
           to: publicPath,
           globOptions: {
             dot: true,
             gitignore: true,
-            ignore: ["**/*.ts", "**/*.tsx", "**/*.scss"],
+            ignore: ['**/*.ts', '**/*.tsx', '**/*.scss'],
           }
         },
       ]
@@ -89,5 +89,5 @@ module.exports = {
     ),
     new WriteFilePlugin()
   ],
-  target: ["web", "es5"],
+  target: ['web', 'es5'],
 };
