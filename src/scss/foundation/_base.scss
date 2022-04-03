@@ -1,0 +1,34 @@
+@use './variable/color';
+
+/* ========================================
+  Base
+  Note: Difine your base style
+======================================== */
+:root {
+  // Canvas Color
+  --color-canvas-primary: #{color.$color-canvas-primary};
+  --color-canvas-inverted: #{color.$color-canvas-inverted};
+
+  // Brand Color
+  --color-brand-primary: #{color.$color-brand-primary};
+  --color-brand-secondary: #{color.$color-brand-secondary};
+  --color-brand-tertiary: #{color.$color-brand-tertiary};
+
+  // Text Color
+  --color-text-primary: #{color.$color-text-primary};
+  --color-text-secondary: #{color.$color-text-secondary};
+  --color-text-tertiary: #{color.$color-text-tertiary};
+  --color-text-inverted: #{color.$color-text-inverted};
+  --color-text-link: #{color.$color-text-link};
+  --color-text-success: #{color.$color-text-success};
+  --color-text-warn: #{color.$color-text-warn};
+  --color-text-danger: #{color.$color-text-danger};
+
+  // UI Color
+  --color-ui-primary: #{color.$color-ui-primary};
+  --color-ui-secondary: #{color.$color-ui-secondary};
+  --color-ui-tertiary: #{color.$color-ui-tertiary};
+  --color-ui-success: #{color.$color-ui-success};
+  --color-ui-warn: #{color.$color-ui-warn};
+  --color-ui-danger: #{color.$color-ui-danger};
+}
