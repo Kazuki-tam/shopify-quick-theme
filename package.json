@@ -1,6 +1,6 @@
 {
   "name": "shopify-quick-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Starter kit for Shopify theme developers.",
   "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "license": "MIT",
@@ -55,6 +55,7 @@
     "@types/prettier": "^2.4.4",
     "@types/rimraf": "^3.0.2",
     "@types/smooth-scroll": "^16.1.1",
+    "@types/write-file-webpack-plugin": "^4.5.2",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
     "autoprefixer": "^10.4.2",

@@ -3,7 +3,10 @@
 // =========================================
 // Foundation
 // =========================================
-// Delete this code before you get started.
-.test {
-  color: #000;
-}
+@use './foundation/base';
+
+// =========================================
+// Utility
+// =========================================
+@use './utility/screen-reader';
+@use './utility/text-align';
