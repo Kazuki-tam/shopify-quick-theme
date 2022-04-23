@@ -22,7 +22,7 @@
     "eslint:fix": "eslint --fix 'src/**/*.{js,ts}'",
     "checkTypes": "tsc --noEmit",
     "checkLicense": "license-checker --production",
-    "test": "unit e2e",
+    "test": "npm-run-all -p unit e2e",
     "unit": "jest",
     "unit:watch": "jest --watch",
     "e2e": "playwright test",
