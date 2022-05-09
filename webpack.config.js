@@ -62,6 +62,13 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          'svg-sprite-loader',
+          'svgo-loader'
+        ]
+      }
     ],
   },
   resolve: {
@@ -87,7 +94,7 @@ module.exports = {
       ]
      }
     ),
-    new WriteFilePlugin()
+    new WriteFilePlugin(),
   ],
   target: ['web', 'es5'],
 };
