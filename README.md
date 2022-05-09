@@ -23,10 +23,11 @@ shopify-quick-theme is a starter kit for Shopify theme developers. This starter 
 ## Requirements
 
 - [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI v2.13.0](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v2.16.1+](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
+[📖 Upgrade or uninstall Shopify CLI](https://shopify.dev/themes/tools/cli/upgrade-uninstall)
 ## Main dependencies
 
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
@@ -64,7 +65,7 @@ Use `newTheme` command to create a new theme from scratch. This command creates 
 yarn newTheme
 ```
 
-https://shopify.dev/themes/tools/cli/theme-commands#init
+[📖 Theme commands - init](https://shopify.dev/themes/tools/cli/theme-commands#init)
 
 ### Customize an existing theme
 
