@@ -2,7 +2,7 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  // Look for test files in the "tests" directory, relative to this configuration file
+  // Look for test files in the "e2e" directory, relative to this configuration file
   testDir: 'e2e',
 
   // Each test is given 30 seconds

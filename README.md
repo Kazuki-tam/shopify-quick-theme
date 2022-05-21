@@ -23,7 +23,7 @@ shopify-quick-theme is a starter kit for Shopify theme developers. This starter 
 ## Requirements
 
 - [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI v2.16.1+](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v2.17.0+](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -223,6 +223,48 @@ Generate End-to-end test code.
 
 ```bash
 yarn e2e:codegen
+```
+
+### Share command
+Uploads your theme as a new, unpublished theme in your theme library.
+
+```bash
+yarn share
+```
+
+### Package command
+Packages your local theme files into a ZIP file that can be uploaded to Shopify.
+
+```bash
+yarn package
+```
+
+### Products command
+Creates products in your store. Products are created with a title and a price.
+
+```bash
+yarn products
+```
+
+### Customers command
+Creates customers in your store. Customers are created with a name only.
+
+```bash
+yarn customers
+```
+
+### Draft orders command
+Creates draft orders in your store. Draft orders are created with one custom item.
+
+```bash
+yarn draftorders
+```
+
+### Store command
+Displays the store that you're currently connected to.
+
+```bash
+yarn store
 ```
 
 ### PostInstall command
