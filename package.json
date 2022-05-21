@@ -40,9 +40,17 @@
     "push": "cd shopify && shopify theme push -n",
     "push:dev": "cd shopify && shopify theme push -d",
     "push:upload": "cd shopify && shopify theme push -u",
+    "share": "cd shopify && shopify theme share",
+    "store": "shopify store",
+    "package": "npm-run-all theme:package",
     "preview": "shopify theme open",
+    "products": "shopify populate products",
+    "customers": "shopify populate customers",
+    "draftorders": "shopify populate draftorders",
     "theme:init": "shopify theme init shopify",
     "theme:serve": "cd shopify && shopify theme serve",
+    "theme:list": "shopify theme list",
+    "theme:package": "cd shopify && shopify theme package",
     "theme:check": "cd shopify && shopify theme check -a"
   },
   "devDependencies": {
