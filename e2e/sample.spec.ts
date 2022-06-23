@@ -6,6 +6,7 @@ const SHOP_URL = process.env.SHOP_URL;
 const SHOP_PASS = process.env.SHOP_PASS
 
 test('Access test', async ({ page }) => {
+  if (!SHOP_URL || !SHOP_PASS) return
   await page.goto(SHOP_URL);
   // Click input[name="password"]
   await page.locator('input[name="password"]').click();
