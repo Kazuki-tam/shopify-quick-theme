@@ -2,12 +2,6 @@
 
 shopify-quick-theme is a starter kit for Shopify theme developers. This starter kit supports you to customize a Shopify theme and build a new one from scratch.
 
-<!-- BADGES/ -->
-<p>
-    <a href="https://buymeacoffee.com/ricebookspk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" width="120"></a>
-</p>
-<!-- /BADGES -->
-
 ## Status
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/releases/tag/v0.0.1)
@@ -29,7 +23,7 @@ shopify-quick-theme is a starter kit for Shopify theme developers. This starter 
 ## Requirements
 
 - [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI v2.17.0+](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v2.20.0+](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -323,6 +317,14 @@ The way of Using SVG Sprites in HTML and Liquid.
 ## Contributes
 
 Pull requests are always welcome.
+
+## Support
+
+<!-- BADGES/ -->
+<p>
+    <a href="https://buymeacoffee.com/ricebookspk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" width="130"></a>
+</p>
+<!-- /BADGES -->
 
 ## License
 
