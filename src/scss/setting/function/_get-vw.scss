@@ -1,6 +1,5 @@
-@charset "UTF-8";
 @use "../variable/font-size";
-@use "../function/strip-unit" as su;
+@use "strip-unit" as su;
 @use "sass:math";
 
 /* ========================================
