@@ -1,4 +1,4 @@
-@use "./variable/color";
+@use "../setting" as *;
 
 /* ========================================
   Base
@@ -6,29 +6,29 @@
 ======================================== */
 :root {
   // Canvas Color
-  --color-canvas-primary: #{color.$color-canvas-primary};
-  --color-canvas-inverted: #{color.$color-canvas-inverted};
+  --color-canvas-primary: #{$color-canvas-primary};
+  --color-canvas-inverted: #{$color-canvas-inverted};
 
   // Brand Color
-  --color-brand-primary: #{color.$color-brand-primary};
-  --color-brand-secondary: #{color.$color-brand-secondary};
-  --color-brand-tertiary: #{color.$color-brand-tertiary};
+  --color-brand-primary: #{$color-brand-primary};
+  --color-brand-secondary: #{$color-brand-secondary};
+  --color-brand-tertiary: #{$color-brand-tertiary};
 
   // Text Color
-  --color-text-primary: #{color.$color-text-primary};
-  --color-text-secondary: #{color.$color-text-secondary};
-  --color-text-tertiary: #{color.$color-text-tertiary};
-  --color-text-inverted: #{color.$color-text-inverted};
-  --color-text-link: #{color.$color-text-link};
-  --color-text-success: #{color.$color-text-success};
-  --color-text-warn: #{color.$color-text-warn};
-  --color-text-danger: #{color.$color-text-danger};
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+  --color-text-tertiary: #{$color-text-tertiary};
+  --color-text-inverted: #{$color-text-inverted};
+  --color-text-link: #{$color-text-link};
+  --color-text-success: #{$color-text-success};
+  --color-text-warn: #{$color-text-warn};
+  --color-text-danger: #{$color-text-danger};
 
   // UI Color
-  --color-ui-primary: #{color.$color-ui-primary};
-  --color-ui-secondary: #{color.$color-ui-secondary};
-  --color-ui-tertiary: #{color.$color-ui-tertiary};
-  --color-ui-success: #{color.$color-ui-success};
-  --color-ui-warn: #{color.$color-ui-warn};
-  --color-ui-danger: #{color.$color-ui-danger};
+  --color-ui-primary: #{$color-ui-primary};
+  --color-ui-secondary: #{$color-ui-secondary};
+  --color-ui-tertiary: #{$color-ui-tertiary};
+  --color-ui-success: #{$color-ui-success};
+  --color-ui-warn: #{$color-ui-warn};
+  --color-ui-danger: #{$color-ui-danger};
 }
