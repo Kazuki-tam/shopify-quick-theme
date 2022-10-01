@@ -88,7 +88,7 @@ module.exports = {
           globOptions: {
             dot: true,
             gitignore: true,
-            ignore: ['**/*.ts', '**/*.tsx', '**/*.scss'],
+            ignore: ['**/sprite-image/*.svg', '**/*.ts', '**/*.tsx', '**/*.scss'],
           }
         },
       ]
