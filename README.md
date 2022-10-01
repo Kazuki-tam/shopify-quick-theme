@@ -321,6 +321,8 @@ The way of Using SVG Sprites in HTML and Liquid.
 Pull requests are always welcome.
 
 ## Support
+I'll be trying to keep this starter kit as up-to-date as possible.
+I hope you buy me a coffee if this starter kit is helpful for you.
 
 <!-- BADGES/ -->
 <p>
