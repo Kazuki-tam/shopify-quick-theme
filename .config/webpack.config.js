@@ -1,8 +1,9 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyFilePlugin = require('copy-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
-const publicPath = `${__dirname}/shopify/`;
-const assetsPath = `${__dirname}/shopify/assets`;
+const path = require('path');
+const publicPath = path.resolve(__dirname, '../shopify/');
+const assetsPath = path.resolve(__dirname, '../shopify/assets/');
 
 // Set production or development via NODE_ENV
 const MODE = process.env.NODE_ENV;
