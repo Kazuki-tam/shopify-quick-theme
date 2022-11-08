@@ -59,7 +59,7 @@ Use `newTheme` command to create a new theme from scratch. This command creates 
 yarn newTheme
 ```
 
-[📖 Theme commands - init](https://shopify.dev/themes/tools/cli/theme-commands#init)
+[📖 Shopify CLI commands for themes - init](https://shopify.dev/themes/tools/cli/commands#init)
 
 ### Customize an existing theme
 
