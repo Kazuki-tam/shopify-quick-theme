@@ -25,7 +25,7 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 ## Requirements
 
 - [Node v16+](https://nodejs.org/en/)
-- [Shopify CLI v2.25.0+](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v3.22.1+](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -51,14 +51,6 @@ Clone this repository and install dependencies.
 yarn install
 ```
 
-### Authenticate
-
-Connect Shopify CLI with the store that you want to work on.
-
-```bash
-shopify login --store xxxxxxxxx.myshopify.com
-```
-
 ### Create a new theme
 
 Use `newTheme` command to create a new theme from scratch. This command creates a copy of Dawn.
@@ -67,7 +59,7 @@ Use `newTheme` command to create a new theme from scratch. This command creates 
 yarn newTheme
 ```
 
-[📖 Theme commands - init](https://shopify.dev/themes/tools/cli/theme-commands#init)
+[📖 Shopify CLI commands for themes - init](https://shopify.dev/themes/tools/cli/commands#init)
 
 ### Customize an existing theme
 
@@ -239,34 +231,6 @@ Packages your local theme files into a ZIP file that can be uploaded to Shopify.
 
 ```bash
 yarn package
-```
-
-### Products command
-Creates products in your store. Products are created with a title and a price.
-
-```bash
-yarn products
-```
-
-### Customers command
-Creates customers in your store. Customers are created with a name only.
-
-```bash
-yarn customers
-```
-
-### Draft orders command
-Creates draft orders in your store. Draft orders are created with one custom item.
-
-```bash
-yarn draftorders
-```
-
-### Store command
-Displays the store that you're currently connected to.
-
-```bash
-yarn store
 ```
 
 ### PostInstall command
