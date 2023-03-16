@@ -1,0 +1,8 @@
+{% comment %} このファイルを直接編集することはできません。 {% endcomment %}
+<!-- 配送時間の選択肢表示 -->
+<div class="app-deliverydate app-deliverydate--time">
+  <label for="delivery_time" class="delivery_time">配送時間を選択</label>
+  <select id="delivery_time" name="attributes[delivery_time]" value="{{ cart.attributes.delivery_time }}" translate="no">
+    <option>指定なし</option>
+  </select>
+</div>
