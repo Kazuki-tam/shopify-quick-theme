@@ -82,7 +82,7 @@
     "sass": "^1.59.3",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.2",
-    "stylelint": "^15.2.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^30.0.1",
     "stylelint-config-standard-scss": "^7.0.1",
