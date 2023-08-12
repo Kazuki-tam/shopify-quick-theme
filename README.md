@@ -24,7 +24,7 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 
 ## Requirements
 
-- [Node v16+](https://nodejs.org/en/)
+- [Node v16 or higher](https://nodejs.org/en/)
 - [Shopify CLI v3.48.1 or higher](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
