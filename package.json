@@ -1,11 +1,11 @@
 {
   "name": "shopify-quick-theme",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Starter kit for Shopify theme developers.",
   "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "license": "MIT",
   "scripts": {
-    "start": "npm-run-all -p theme:serve webpack:watch",
+    "dev": "npm-run-all -p theme:serve webpack:watch",
     "build": "npm-run-all webpack:prd",
     "build:dev": "npm-run-all webpack:dev",
     "deploy": "npm-run-all webpack:prd push",
@@ -56,10 +56,7 @@
     "@types/license-checker": "^25.0.3",
     "@types/micromodal": "^0.3.3",
     "@types/opener": "^1.4.0",
-    "@types/prettier": "^3.0.0",
-    "@types/rimraf": "^4.0.5",
     "@types/sass-loader": "^8.0.5",
-    "@types/smooth-scroll": "^16.1.1",
     "@types/svg-sprite-loader": "^3.9.5",
     "@types/write-file-webpack-plugin": "^4.5.2",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
@@ -84,7 +81,6 @@
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "stylelint": "^15.10.2",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-standard-scss": "^10.0.0",
     "stylelint-order": "^6.0.3",
@@ -98,10 +94,6 @@
     "typesync": "^0.11.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "write-file-webpack-plugin": "^4.5.1",
-    "yarn-audit-fix": "^10.0.0"
-  },
-  "dependencies": {
-    "smooth-scroll": "^16.1.3"
+    "write-file-webpack-plugin": "^4.5.1"
   }
 }
