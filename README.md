@@ -103,13 +103,13 @@ pnpm dev
 Build your project for production.
 
 ```bash
-pnpm build
+pnpm release
 ```
 
 Build your project for development.
 
 ```bash
-pnpm build:dev
+pnpm build
 ```
 
 <details>
