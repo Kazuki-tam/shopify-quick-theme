@@ -98,8 +98,7 @@
     "typesync": "^0.11.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "write-file-webpack-plugin": "^4.5.1",
-    "yarn-audit-fix": "^10.0.0"
+    "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
     "smooth-scroll": "^16.1.3"
