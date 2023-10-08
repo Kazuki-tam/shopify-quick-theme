@@ -14,13 +14,12 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 ## Features
 
 - Abstracting Shopify CLI command
-- Bundle files with webpack
+- Bundle TS files with Rspack
 - Transpile SCSS to CSS with dart-sass
 - Lint TS files with ESLint
 - Lint SCSS files with Stylelint
 - Format code with prettier
 - Built-in test runner with Jest and Playwright
-- Creating SVG sprites
 
 ## Requirements
 
@@ -34,7 +33,7 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 
 - [Shopify CLI](https://shopify.dev/themes/tools/cli)
 - [pnpm](https://pnpm.io/)
-- [Webpack](https://webpack.js.org/)
+- [Rspack](https://www.rspack.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
 - [ESLint](https://eslint.org/)
@@ -80,11 +79,11 @@ pnpm pull:new
 Add these tags in `<head></head>` section.
 
 ```liquid
-{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'custom-style.css' | asset_url | stylesheet_tag }}
 ```
 
 ```liquid
-<script src="{{ 'main.js' | asset_url }}" defer></script>
+<script src="{{ 'custom-script.js' | asset_url }}" defer></script>
 ```
 
 ## Available Commands
@@ -256,29 +255,6 @@ Install supported browsers.
 
 ```bash
 pnpm e2e:install
-```
-## SVG sprite
-You can manage SVG sprites with [svg-sprite-loader](https://www.npmjs.com/package/svg-sprite-loader).
-
-Add SVG images into `sprite-image` folder.
-
-```
-src/ts/sprite-image/*.svg
-```
-
-Import SVG images at entrypoint.
-
-```ts
-// Import SVG Sprite Images
-import './sprite-image/bag.svg';
-```
-
-The way of Using SVG Sprites in HTML and Liquid.
-
-```html
-<svg>
-  <use xlink:href="#bag"></use>
-</svg>
 ```
 
 ## Recommended IDE
