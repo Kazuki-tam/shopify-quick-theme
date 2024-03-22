@@ -65,8 +65,8 @@
     "theme:check": "shopify theme check --path=shopify"
   },
   "devDependencies": {
-    "@playwright/test": "^1.38.1",
-    "@rspack/cli": "^0.3.6",
+    "@playwright/test": "^1.42.1",
+    "@rspack/cli": "^0.5.8",
     "@types/eslint": "^8.44.3",
     "@types/jest": "^29.5.5",
     "@types/license-checker": "^25.0.4",
@@ -74,7 +74,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "autoprefixer": "^10.4.16",
-    "cpx": "^1.5.0",
+    "cpx2": "^7.0.1",
     "cross-env": "^7.0.3",
     "cssnano": "^6.0.1",
     "dotenv": "^16.3.1",
@@ -87,7 +87,6 @@
     "opener": "^1.5.2",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
-    "postcss-combine-media-query": "^1.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-plugin": "^1.0.0",
     "postcss-scss": "^4.0.9",

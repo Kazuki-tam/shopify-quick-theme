@@ -4,7 +4,6 @@ module.exports = () => ({
   map: false,
   plugins: {
     'postcss-flexbugs-fixes': true,
-    'postcss-combine-media-query': true,
     'autoprefixer': {
       grid: "autoplace",
     },
