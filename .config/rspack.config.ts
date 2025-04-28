@@ -9,6 +9,9 @@ const MODE = process.env.NODE_ENV || 'development';
 const enabledSourceMap = MODE === 'development';
 
 export default defineConfig({
+  devServer: {
+    hot: true,
+  },
   // Entry point
   entry: {
     'custom-script': './src/ts/main.ts',
