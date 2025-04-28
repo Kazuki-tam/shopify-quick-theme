@@ -15,7 +15,7 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 
 - Abstracting Shopify CLI command
 - Bundle TS files with Rspack
-- Transpile SCSS to CSS with dart-sass
+- Transpile SCSS to CSS
 - Lint TS files with Biome
 - Lint SCSS files with Stylelint
 - Built-in test runner with Vitest and Playwright
