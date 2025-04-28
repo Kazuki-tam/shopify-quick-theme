@@ -1,1 +1,1 @@
-console.log('Hello Shopify!');
+console.log("Hello Shopify!");

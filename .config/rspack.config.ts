@@ -1,4 +1,6 @@
-const path = require('path');
+import path from 'path';
+import { defineConfig } from '@rspack/cli';
+
 const assetsPath = path.resolve(__dirname, '../shopify/assets/');
 
 // Set production or development via NODE_ENV
@@ -6,8 +8,7 @@ const MODE = process.env.NODE_ENV || 'development';
 // Source map setting
 const enabledSourceMap = MODE === 'development';
 
-module.exports = {
-  mode: MODE,
+export default defineConfig({
   // Entry point
   entry: {
     'custom-script': './src/ts/main.ts',
@@ -18,4 +19,4 @@ module.exports = {
     filename: '[name].js',
   },
   devtool: enabledSourceMap ? 'source-map' : 'eval-source-map',
-};
+});
