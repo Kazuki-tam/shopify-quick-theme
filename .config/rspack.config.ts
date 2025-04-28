@@ -9,8 +9,8 @@ const MODE = process.env.NODE_ENV || 'development';
 const enabledSourceMap = MODE === 'development';
 
 export default defineConfig({
-  devServer: {
-    hot: true,
+  watchOptions: {
+    ignored: /node_modules/,
   },
   // Entry point
   entry: {
