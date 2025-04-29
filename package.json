@@ -17,6 +17,7 @@
     "cheat": "open-cli https://www.shopify.com/partners/shopify-cheat-sheet",
     "clean": "rimraf ./shopify",
     "clean:unused": "rimraf ./shopify/.gitignore",
+    "clean:packages": "rimraf node_modules",
     "copy": "npm-run-all -p 'copy:*'",
     "copy:liquid": "cpx './src/**/*.liquid' './shopify/'",
     "copy:assets": "cpx './src/assets/*' './shopify/assets'",

@@ -7,10 +7,10 @@
  */
 
 function trimTxt(text: string, trimLength = 50, afterText = "…"): string {
-	if (text.length < trimLength) {
-		return text;
-	}
-	return text.substring(0, trimLength) + afterText;
+  if (text.length < trimLength) {
+    return text;
+  }
+  return text.substring(0, trimLength) + afterText;
 }
 
 export { trimTxt };
