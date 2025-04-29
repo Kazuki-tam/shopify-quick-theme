@@ -6,7 +6,7 @@
  * @returns { string } - Trimed text
  */
 
-function trimTxt(text: string, trimLength = 50, afterText = '…'): string {
+function trimTxt(text: string, trimLength = 50, afterText = "…"): string {
   if (text.length < trimLength) {
     return text;
   }

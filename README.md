@@ -8,23 +8,22 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2023)
+![Maintenance](https://img.shields.io/maintenance/yes/2025)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme)
 
 ## Features
 
 - Abstracting Shopify CLI command
 - Bundle TS files with Rspack
-- Transpile SCSS to CSS with dart-sass
-- Lint TS files with ESLint
+- Transpile SCSS to CSS
+- Lint TS files with Biome
 - Lint SCSS files with Stylelint
-- Format code with prettier
-- Built-in test runner with Jest and Playwright
+- Built-in test runner with Vitest and Playwright
 
 ## Requirements
 
-- [Node v18 or higher](https://nodejs.org/en/)
-- [Shopify CLI v3.49.6 or higher](https://shopify.dev/themes/tools/cli)
+- [Node v22 or higher](https://nodejs.org/en/)
+- [Shopify CLI v3.78.2 or higher](https://shopify.dev/themes/tools/cli)
 
 Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
 
@@ -36,10 +35,8 @@ Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli
 - [Rspack](https://www.rspack.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
-- [ESLint](https://eslint.org/)
-- [Stylelint](https://stylelint.io/)
-- [Prettier](https://prettier.io/)
-- [Jest](https://jestjs.io/)
+- [Biome](https://biomejs.dev/)
+- [Vitest](https://vitest.dev/)
 - [Playwright](https://playwright.dev/)
 
 ## How to use
@@ -173,6 +170,13 @@ pnpm cheat
 ```
 
 [Shopify Cheat Sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
+
+### Shopify document command
+Open Shopify theme document.
+
+```bash
+pnpm themeDocs
+```
 
 ### Lint command
 

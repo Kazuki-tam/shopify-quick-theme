@@ -1,5 +1,5 @@
 // playwright.config.ts
-import { PlaywrightTestConfig } from '@playwright/test';
+import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   // Look for test files in the "e2e" directory, relative to this configuration file

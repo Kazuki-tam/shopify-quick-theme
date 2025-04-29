@@ -1,4 +1,4 @@
-import { breakpoint } from '../constant/breakpoint';
+import { breakpoint } from "../constant/breakpoint";
 
 /**
  * Get MediaQueryList Function
@@ -9,13 +9,13 @@ import { breakpoint } from '../constant/breakpoint';
  */
 
 // class infix
-type sizeType = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+type sizeType = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 
 // max-width or min-width
-type scaleType = 'min' | 'max';
+type scaleType = "min" | "max";
 
-function getMediaQueryList(size: sizeType, scale: scaleType = 'min') {
-  if (scale === 'max') {
+function getMediaQueryList(size: sizeType, scale: scaleType = "min") {
+  if (scale === "max") {
     return window.matchMedia(`(max-width: ${breakpoint[size]})`);
   }
   return window.matchMedia(`(min-width: ${breakpoint[size]})`);
