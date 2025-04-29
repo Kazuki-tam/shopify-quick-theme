@@ -17,20 +17,19 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 - Bundle TS files with Rspack
 - Transpile SCSS to CSS
 - Lint TS files with Biome
-- Lint SCSS files with Stylelint
 - Built-in test runner with Vitest and Playwright
 
 ## Requirements
 
 - [Node v22 or higher](https://nodejs.org/en/)
-- [Shopify CLI v3.78.2 or higher](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI v3.78.2 or higher](https://shopify.dev/docs/api/shopify-cli/theme)
 
-Note: Please refer to [Install Shopify CLI](https://shopify.dev/themes/tools/cli/installation) if you haven't installed Shopify CLI yet.
+Note: Please refer to [Install Shopify CLI](https://shopify.dev/docs/api/shopify-cli) if you haven't installed Shopify CLI yet.
 
-[📖 Upgrade or uninstall Shopify CLI](https://shopify.dev/themes/tools/cli/upgrade-uninstall)
+[📖 Upgrade or uninstall Shopify CLI](https://shopify.dev/docs/storefronts/themes/tools/cli#upgrade-shopify-cli)
 ## Main dependencies
 
-- [Shopify CLI](https://shopify.dev/themes/tools/cli)
+- [Shopify CLI](https://shopify.dev/docs/api/shopify-cli/theme)
 - [pnpm](https://pnpm.io/)
 - [Rspack](https://www.rspack.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
