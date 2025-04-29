@@ -171,6 +171,13 @@ pnpm cheat
 
 [Shopify Cheat Sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
 
+### Shopify document command
+Open Shopify theme document.
+
+```bash
+pnpm themeDocs
+```
+
 ### Lint command
 
 Lint this project code.

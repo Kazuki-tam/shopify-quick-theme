@@ -14,6 +14,7 @@
     "release:style": "npm-run-all sass:prd postCss",
     "deploy": "npm-run-all release push",
     "deploy:dev": "npm-run-all build push:dev",
+    "themeDocs": "open-cli https://shopify.dev/docs/storefronts/themes",
     "cheat": "open-cli https://www.shopify.com/partners/shopify-cheat-sheet",
     "clean": "rimraf ./shopify",
     "clean:unused": "rimraf ./shopify/.gitignore",
