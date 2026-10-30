@@ -6,9 +6,9 @@ Please refer to [shopify-quick-theme-mix](https://github.com/Kazuki-tam/shopify-
 
 ## Status
 
-[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/releases/tag/v0.0.1)
+[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/releases/latest)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/shopify-quick-theme)](https://github.com/Kazuki-tam/shopify-quick-theme/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/shopify-quick-theme)
 
 ## Features
